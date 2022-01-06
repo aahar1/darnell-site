@@ -1,14 +1,12 @@
 import React from 'react';
 //styled compoments
-//import styled from 'styled-components';
+import styled from 'styled-components';
 import '../style.css';
 import { motion } from "framer-motion";
-
+import Wave from './Wave';
 //images
 //import single2 from '../images/single2.JPEG';
 import photo3 from '../images/black-white3.jpg';
-import plant1 from '../images/plant1.png';
-//import plant2 from '../images/plant2.png';
 import jacket from '../images/jacket-no-backdrop.png'
 
 
@@ -42,17 +40,22 @@ const HeadingSection = () => {
                 </p>
                 <a href="#gallery" id='gallery-heading-section'>Gallery</a>
            </motion.div>
-           <div className="hero-images">
+           
+           <div className="hero-images">   
+                            
                <img classname='hero-darnell' 
                     src={photo3} 
                     alt="pic of Darnell" />
-                {/* <img src={jacket} alt="" className='plant1' id='plant'/>  
-                <img src='' alt="" className='plant2 ' id='plant'/>   */}
+                
            </div>
+           
        </div>
        
     );
 };
+
+
+
 
 export default HeadingSection;
 

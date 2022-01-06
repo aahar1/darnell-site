@@ -6,19 +6,19 @@ import { motion } from 'framer-motion';
 import { pageAnimation } from '../components/animation';
 
 const Work = () => {
-    const ColoredLine = ({ color }) => (
-        <hr
-            style={{
-                color,
-                backgroundColor: color,
-                height: 5,
-                width: 500,
-                alignContent: "center",
-                color: 'blue',
-                margin: '10 rem 10 rem'
-            }}
-        />
-    );
+    // const ColoredLine = ({ color }) => (
+    //     <hr
+    //         style={{
+    //             color,
+    //             backgroundColor: color,
+    //             height: 5,
+    //             width: 500,
+    //             alignContent: "center",
+    //             color: 'blue',
+    //             margin: '10 rem 10 rem'
+    //         }}
+    //     />
+    // );
     return (
     <motion.div 
     exit='exit' 
@@ -45,10 +45,8 @@ const Work = () => {
             </div>
           </div>
         </div>
-            <div className="line">
-                <ColoredLine                   
-                />
-            </div>
+            <Line className="line">
+            </Line>
         <div className="container2">
             <div className="row">
                 <div className="column">
@@ -70,8 +68,8 @@ const Work = () => {
             </div>          
                        
         </div> 
-            <div className="line">
-                <ColoredLine /></div>
+            <Line className="line">
+            </Line>
         <div className="container2">
             <div className="row">
                 <div className="column">
@@ -93,8 +91,8 @@ const Work = () => {
             </div>          
                        
         </div> 
-            <div className="line">
-                <ColoredLine /></div>
+            <Line className="line">
+            </Line>
         <div className="container2">
             <div className="row">
                 <div className="column">
@@ -116,8 +114,8 @@ const Work = () => {
             </div>          
                        
         </div> 
-            <div className="line">
-                <ColoredLine /></div>
+            <Line className="line">
+            </Line>
         <div className="container2">
             <div className="row">
                 <div className="column">
@@ -139,8 +137,8 @@ const Work = () => {
             </div>          
                        
         </div> 
-            <div className="line">
-                <ColoredLine /></div>
+            <Line className="line">
+                </Line>
                
             
             
@@ -148,6 +146,15 @@ const Work = () => {
     )
 }
 
+
+const Line = styled.div`
+    height: 0.5rem;
+    background:#800020 ;
+    margin-bottom: 4rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+`;
 
 
 export default Work;

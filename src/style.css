@@ -86,6 +86,15 @@ ul {
     overflow: hidden;
     align-self: flex-start ;
 }
+
+.main-head ul{
+    z-index: 2;
+    position: relative;
+    position: sticky;
+    top: 7;
+    overflow: hidden;
+    align-self: flex-start ;
+}
 nav{
     width: 90%;
     margin: auto;
@@ -93,12 +102,17 @@ nav{
     align-items: center;
     min-height: 10vh;
     padding: 2rem 0rem;
-    
+     z-index: 2;
+    position: relative;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    align-self: flex-start ;
     
     
 }
 #logo {
-    flex: 2 1 20rem;
+    flex: 3 1 20rem;
     text-decoration: none;
     background-color: black;
 }
@@ -328,6 +342,7 @@ nav h1{
 } */
 .gallery{
     grid-template-columns: repeat(auto-fit, min-max(30rem, 1fr));
+    margin-bottom: 20rem;
 }
 
 #gallery-heading-section{
@@ -517,11 +532,7 @@ nav h1{
 .column2-description span{
     color: violet;
 }
-.line{
-    width: 95%;
-    margin-left: 33%;
-   
-}
+
 /*when the screen is 840px in mobile view, display the 
 burger menu*/
 
@@ -541,7 +552,7 @@ burger menu*/
     flex-basis: 100%;
     align-items: center;
     justify-content: center;
-    margin: 30rem;
+    margin:10rem;
     margin-left: 40rem;
     flex-wrap: wrap;
     
@@ -552,9 +563,12 @@ burger menu*/
   left: 0;
 }
 
-.reels-h1{
+.reels-h1 h1{ 
+    font-family: ;
     margin: 3rem;
     text-align: center;
+    font-size: var(--big);
+    color: var(--special-color);
 }
 
 

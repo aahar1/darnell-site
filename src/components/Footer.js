@@ -3,6 +3,8 @@ import '../style.css';
 
 import twitter from '../images/twitter 1.svg';
 import youtube from '../images/youtube-symbol 1.svg';
+import instagram from '../images/instagram.svg';
+import facebook from '../images/facebook.svg';
 
 
 const Footer = () => {
@@ -14,7 +16,8 @@ const Footer = () => {
                     <ul>
                         <li><a href=""><img src={twitter} alt="" /></a></li>
                         <li><a href=""><img src={youtube} alt="" /></a></li>
-                        <li><a href=""><img src={twitter} alt="" /></a></li>
+                        <li><a href=""><img src={instagram} alt="" /></a></li>
+                        <li><a href=""><img src={facebook} alt="" /></a></li>
                     </ul>
                 </footer>
             </div>

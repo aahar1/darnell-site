@@ -32,7 +32,7 @@ const ResumeSectioin = () => {
                     </p>
                 </div>
                 <div className="about-contact">
-                    <h3>Get IN Touch</h3>
+                    <h3>Get In Touch</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eaque accusantium cumque ut atque ratione amet. Ad quo sit reiciendis?
                         
                     </p>

@@ -16,7 +16,8 @@ const HomePage = () => {
             exit='exit' 
             variants={pageAnimation} 
             initial='hidden' 
-            animate='show'>
+            animate='show'
+            style={{overFlow: 'hidden'}}>
            <HeadingSection />
            <StorySection />
            <ResumeSectioin />
