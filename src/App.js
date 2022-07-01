@@ -11,11 +11,26 @@ import GlobalStyle from './components/GlobalStyle';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Reels from './components/Reels';
+import ReelsData from './components/ReelsData';
 import Work from './pages/Work';
+import Player from './components/Player5';
 //Animation
 import {AnimatePresence} from 'framer-motion';
 
 function App() {
+
+  const videos = ReelsData.map((video) => {
+    return (
+     <div>
+        key={video.id}
+        video={video.source}
+     </div>
+        
+      
+    )
+  })
+
+
   const location = useLocation();
   return (
     <div className="App">
@@ -32,7 +47,10 @@ function App() {
           <Work />
         </Route>
         <Route path = '/reels'>
-          <Reels />
+            <Reels player={videos}
+           
+          />
+            
         </Route>
       </Switch>  
       </AnimatePresence>  

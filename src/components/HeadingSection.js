@@ -24,15 +24,14 @@ const HeadingSection = () => {
        
        <div id='hero'>
            <motion.div
-            variants={container} initial="hidden" animate="show"
-           className="hero-introduction flex">
+                 variants={container} initial="hidden" animate="show"
+                 className="hero-introduction flex">
                 <motion.h2
                     variants={titleAnimation} 
                     initial="hidden"
                     animate="show"
                 >Darnell Eaton</motion.h2>
-                <h3>Entertainer</h3>
-                      
+                <h3>Entertainer</h3>                      
                 <p>Lorem ipsum dolor sit amet consectetur
                     adipisicing elit. Quidem, ad?
                     Lorem ipsum dolor sit amet consectetur
@@ -41,16 +40,12 @@ const HeadingSection = () => {
                 <a href="#gallery" id='gallery-heading-section'>Gallery</a>
            </motion.div>
            
-           <div className="hero-images">   
-                            
+           <div className="hero-images">                              
                <img classname='hero-darnell' 
                     src={photo3} 
-                    alt="pic of Darnell" />
-                
-           </div>
-           
-       </div>
-       
+                    alt="pic of Darnell" />             
+           </div>          
+       </div>      
     );
 };
 

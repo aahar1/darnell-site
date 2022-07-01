@@ -124,7 +124,9 @@ const Work = () => {
                     </div>
                 </div>
                     <div className="column">
-                        <div className="column2-description">
+                        <div 
+                            style={{marginBottom: '8rem'}}
+                            className="column2-description">
                             <p className='acting-gigs'>Improv |IMusical |2021<br /> 
                             <span>lead actor</span></p>
                             <p className='acting-gigs'>Improv |IMusical |2021<br /> 
@@ -137,9 +139,7 @@ const Work = () => {
             </div>          
                        
         </div> 
-            <Line className="line">
-                </Line>
-               
+          
             
             
     </motion.div>
@@ -154,6 +154,7 @@ const Line = styled.div`
     width: 90%;
     margin: auto;
     align-items: center;
+    margin-top: 3rem;
 `;
 
 

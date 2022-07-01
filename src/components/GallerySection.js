@@ -11,8 +11,8 @@ const GallerySection = (props) => {
     return (
         <div className='gallery'>
             <header className='gallery-head'>
-            <h2>Quality Photography</h2>
-            <p>My professional photos</p>
+                <h2>Quality Photography</h2>
+                <p>My professional photos</p>
             </header>
             <img className='gallery1' src={photo1} alt="standing with smile" />
             <img  style={{width: '100%', height: '100%',
