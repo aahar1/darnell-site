@@ -7,6 +7,7 @@ import Col from "react-bootstrap/Col";
 import '../style.css';
 //images
 import shoe from '../images/tie-shoe.jpg';
+import pink from '../images/pink2.JPG';
 
 
 
@@ -14,8 +15,8 @@ const ResumeSectioin = () => {
     return (
         <div className='about'>
             <div className="about-image">
-                <h5 id='size'>Actor</h5>
-                <img src={shoe} alt="" />
+                <h5 id='size'></h5>
+                <img src={pink} alt="" />
             </div>   
             <div className="about-text flex">
                 <h2>Darnell Eaton</h2>

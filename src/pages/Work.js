@@ -19,6 +19,7 @@ const Work = () => {
     //         }}
     //     />
     // );
+    //INCREASE FONT SIZE ON 'STAGE', IMPROV', ETC
     return (
     <motion.div 
     exit='exit' 

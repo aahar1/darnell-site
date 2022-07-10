@@ -32,10 +32,9 @@ const HeadingSection = () => {
                     animate="show"
                 >Darnell Eaton</motion.h2>
                 <h3>Entertainer</h3>                      
-                <p>Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Quidem, ad?
-                    Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Quidem, ad?
+                <p>Darnell is an up and coming DC-based artist who
+                     has a niche for bringing physical, 
+                    emotionally ranged, and high energy characters to life on film. 
                 </p>
                 <a href="#gallery" id='gallery-heading-section'>Gallery</a>
            </motion.div>

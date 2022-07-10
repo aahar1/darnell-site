@@ -3,6 +3,7 @@ import React from 'react';
 import HeadingSection from '../components/HeadingSection';
 import ResumeSectioin from '../components/ResumeSectioin';
 import StorySection from '../components/StorySection';
+import ImageGallaryComponent from '../components/ImageGallaryComponent';
 import GallerySection from '../components/GallerySection';
 import Contact from '../components/Contact';
 import '../style.css';
@@ -20,8 +21,9 @@ const HomePage = () => {
             style={{overFlow: 'hidden'}}>
            <HeadingSection />
            <StorySection />
+           <ImageGallaryComponent />
            <ResumeSectioin />
-           <GallerySection />
+         n
         
         </motion.div>
     )

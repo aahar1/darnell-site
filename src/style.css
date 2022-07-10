@@ -616,6 +616,8 @@ padding-top:60px;
     margin: auto;
     }
    
+
+    /*NAV LINK STYLES*/
     .nav-links a{
         color: var(--special-color);
         font-size: var(--header3);
