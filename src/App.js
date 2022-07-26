@@ -16,6 +16,8 @@ import Work from './pages/Work';
 import Player from './components/Player5';
 //Animation
 import {AnimatePresence} from 'framer-motion';
+import PDFFile from './components/PDFFile';
+import { PDFDownloadLink } from '@react-pdf/renderer';
 
 function App() {
 
@@ -47,10 +49,14 @@ function App() {
           <Work />
         </Route>
         <Route path = '/reels'>
-            <Reels player={videos}
-           
-          />
-            
+            <Reels player={videos}          
+          />          
+        </Route>
+        <Route path = '/resume'>
+          <PDFDownloadLink document ={<PDFFile />} fileName='FORM'>
+            {({loading}) =>(loading ? <button>Loading Document</button>: <button>Download</button>)}
+          </PDFDownloadLink>
+          <PDFFile />
         </Route>
       </Switch>  
       </AnimatePresence>  

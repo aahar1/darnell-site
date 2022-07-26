@@ -122,7 +122,7 @@ nav{
     font-size: 18px;
 }
 .navBarScroll-active{
-    background: #faf7f7;
+    background: white;
     z-index: 4;
     width: 100%;
     

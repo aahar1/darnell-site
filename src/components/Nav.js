@@ -62,6 +62,7 @@ const Nav = () => {
                         <li className='nav-items'><NavLink activeStyle={{ color: '#906272' }} to="/work">My Work</NavLink><NavLine /></li>
                         <li className='nav-items'><NavLink activeStyle={{ color: '#906272' }} to="/reels">Reels</NavLink><NavLine /></li>
                         <li className='nav-items'><NavLink activeStyle={{ color: '#906272' }} to="/contact">Contact Me</NavLink><NavLine /></li>
+                        <li className='nav-items'><NavLink activeStyle={{ color: '#906272' }} to="/resume">Resume</NavLink><NavLine /></li>
                     </ul>
                 )}         
                 <FontAwesomeIcon
