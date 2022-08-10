@@ -45,6 +45,9 @@ const PDFFile = () => {
 
   return (
    <Document>
+       <div>
+           <h1> Click Below to see Darnell Resume</h1>
+       </div>
        <Page style={styles.body}>
            <Text style={styles.header}></Text>
            <Image style={styles.image} src={headshot} />

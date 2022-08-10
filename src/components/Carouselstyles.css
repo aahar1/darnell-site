@@ -16,13 +16,16 @@
     
 }
 .carousel{
+    margin-top: 6rem;
     cursor: grab;
     overflow: hidden;
    
 }
 
-div h1{
+.h1-gallery{
     text-align: center;
     margin-top: 3rem;
     color: burlywood;
+    font-size: 5rem;
+   
 }

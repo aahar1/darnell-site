@@ -53,10 +53,11 @@ function App() {
           />          
         </Route>
         <Route path = '/resume'>
+            <PDFFile />
           <PDFDownloadLink document ={<PDFFile />} fileName='FORM'>
             {({loading}) =>(loading ? <button>Loading Document</button>: <button>Download</button>)}
           </PDFDownloadLink>
-          <PDFFile />
+         
         </Route>
       </Switch>  
       </AnimatePresence>  

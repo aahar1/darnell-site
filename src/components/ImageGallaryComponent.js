@@ -22,7 +22,7 @@ function ImageGallaryComponent (){
         return (
             
             <motion.div ref={carousel} className="carousel" whileTap={{cursor: "grabbing"}}>              
-                <h1>Image Gallery</h1>
+                <h1 className="h1-gallery">Image Gallery</h1>
                 <motion.div 
                     drag='x' 
                     dragConstraints={{right: 0, left: -width}} 

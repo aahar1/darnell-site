@@ -96,14 +96,21 @@ ul {
     top: 7;
     overflow: hidden;
     align-self: flex-start ;
+    margin-top: 1rem;
+    padding: 2rem 7rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
 }
 nav{
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     align-items: center;
     min-height: 10vh;
-    padding: 2rem 0rem;
+    padding: 2rem 7rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    
      z-index: 300;
     position: relative;
     position: sticky;
@@ -113,6 +120,32 @@ nav{
     
     
 }
+
+.navBarScroll-active {
+    background: white;
+
+    width: 100%;
+    padding: 2rem 7rem;
+    min-height: 10vh;
+    margin-left: 4rem;
+    margin-right: 4rem;  
+    display: flex;
+    align-items: center;
+    
+      
+
+}
+
+.navBarScroll-active ul {
+    width: 100%;
+    background: ;
+    margin: auto;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    display: flex;
+     align-items: center;
+    margin-top: 1rem;
+}
 .burger{
     display: none;
     position: absolute;
@@ -121,19 +154,7 @@ nav{
     color: #000;
     font-size: 18px;
 }
-.navBarScroll-active{
-    background: white;
-    z-index: 4;
-    width: 100%;
-    
-}
 
-.navBarScroll-active ul {
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
-    flex: 1 1 20rem;
-}
 
 
 
@@ -148,7 +169,7 @@ nav{
         margin-top: 50px;
     }
     .nav-items {
-        width: 100%;
+        width: 90%;
         margin-right: 0px;
         text-align: center;
         padding:  20px 0;
@@ -523,6 +544,7 @@ nav h1{
 }
 .column1-description h2{
     color: var(--special-color);
+    font-size: 3rem;
 }
 
 .column2-description span{
