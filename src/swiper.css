@@ -1,0 +1,142 @@
+*{padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+.container {
+    max-width: 100vw;
+    width: 100%;
+    
+    display: grid;
+    place-items: center; 
+    min-height: 100vh;    
+        
+ 
+}
+.swiper {
+    width: 80%;
+}
+
+.image__wrapper {
+    width: 100%;
+    position: relative;
+    padding-top: 56.25%;
+}
+.image__wrapper img{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;;
+
+}
+.swiper-styles {
+    width: auto;
+    height: 80vh;
+    margin: 2rem;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.swiper-styles img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    width: -webkit-fill-available;
+    background-size: cover;
+    background-position: center;
+  
+}
+
+.slider-styles img{  
+    width: 100%;
+    object-fit: cover;
+    height: 80vh;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: rgb(158, 151, 151) !important;
+}
+
+
+
+
+.video-responsive{
+    align-items: center;
+   
+  
+}
+
+.youtube-styles {
+    position: absolute;
+        margin:auto;
+        top: 50%;
+       
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+
+
+
+
+@media (max-width:900px) {
+
+    .swiper {
+            width: 100%;
+            height: auto;
+        }
+
+    .youtube-styles {
+            position: absolute;
+            margin: auto;
+            top: 50%;
+    
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+        }
+
+        .slider-styles img {
+            width: 100%;
+            object-fit: cover;
+            height: 80vh;
+        }
+
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .youtube-styles iframe {
+        /* height = 100 * (9 / 16) = 56.25 */
+        height: 50.25vw;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .youtube-styles iframe {
+        /* width = 100 / (9 / 16) = 177.777777 */
+        width: 170.78vh;
+    }
+}
+
+@media (max-width:1080px) {
+
+    .swiper {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .swiper-wrapper {
+       padding: 0px;
+    }
+}

@@ -220,6 +220,7 @@ nav h1{
 }
 
 #hero {
+
     min-height: 90vh;
     width: 95%;
     margin: 0 0 0 auto;
@@ -230,12 +231,14 @@ nav h1{
 }
 
 
-#hero img{
-   overflow: hidden; 
+#hero {
+margin-top: 4rem;
+   
 }
 .hero-introduction {
     flex: 2 1 40rem;
     text-align: center;
+    
 
     
 }
@@ -404,6 +407,7 @@ nav h1{
 }
 .form-wrapper{
     flex: 3 1 40rem;
+    flex-direction: column;
 }
 .form-wrapper span{
     font-size: var(--big);
@@ -421,6 +425,17 @@ nav h1{
     border: none;
     padding: 1rem;
     width: 100%;
+    font-size: 1.5rem;
+}
+.form-wrapper textarea{
+    display: block;
+    margin: 3rem 0rem;
+    background: var(--background-color);
+    color: white;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.5rem;
 }
 .form-wrapper button{
     padding: 1rem 8rem;
@@ -516,6 +531,11 @@ nav h1{
 }
 .column img{
     padding-left: 10rem;
+    
+}
+
+.work-page-image {
+    box-shadow: 5px 10px #888888;
 }
 .column p{
     
@@ -599,9 +619,10 @@ html{
         font-size: 80%;
     }
 }
-@media screen and (max-width: 842px){
 
-    
+
+
+@media screen and (max-width: 900px){
     #hero{
          top: 0;
     width: 100%;
@@ -669,6 +690,25 @@ padding-top:60px;
         width: 120px;
         height: 3px;
         background-color: black;
+    }
+
+     .container .row{  
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        display: inline-block;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .row img{
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .description {
+        justify-content: center;
     }
     
    

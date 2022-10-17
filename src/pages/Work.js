@@ -27,18 +27,18 @@ const Work = () => {
 
     <motion.div 
     exit='exit' 
-    variants={pageAnimation} initial='hidden' animate='show'
-    > 
-        
+    variants={pageAnimation}
+     initial='hidden' animate='show'
+    >         
         <div className='container'>
           <div className='row'>
                 <div className="column">
                     <div className="description">
                             <h1>About Me</h1>
-                            <p>Entertainer</p>
-                            <Link to='/resume'>
-                                <button>Resume pdf</button>
-                            </Link>
+                            {/* <p>Entertainer</p> */}
+                            {/* <Link to='/resume'>
+                             <button>Resume PDF</button>
+                            </Link> */}
                             
                     </div>
                 </div>          
@@ -46,8 +46,10 @@ const Work = () => {
                 <p>Height: 5’8 Weight: 165 Hair: Black Eyes: Black</p>             
             </div>
             <div className='column'>
-                <img src={shoe} alt=""
-                style={{width: '100%',
+                <img 
+                    className='work-page-image'
+                    src={shoe} 
+                    style={{width: '100%',
                         justifyContent: 'end'
                 }}
                 />
@@ -66,11 +68,11 @@ const Work = () => {
                     <div className="column">
                         <div className="column2-description">
                             <p className='acting-gigs'>Citizen's Watch |Improv |2021<br /> 
-                            <span>lead actor</span></p>
+                            <span>Improvisor</span></p>
                             <p className='acting-gigs'>Love Onion Improv Ensemble |Improv |2021<br /> 
-                            <span>lead actor</span></p>
+                                <span>Improvisor </span></p>
                             <p className='acting-gigs'>iMusical Improv Ensemble |IMusical |2021<br /> 
-                            <span>lead actor</span></p>
+                                <span>Improvisor </span></p>
                         </div>
 
                     </div>  
@@ -89,11 +91,11 @@ const Work = () => {
                     <div className="column">
                         <div className="column2-description">
                             <p className='acting-gigs'>Use All Available Doors |Ensemble |2021<br /> 
-                            <span>lead actor</span></p>
+                            <span>Actor</span></p>
                             <p className='acting-gigs'>Yet I Stand |Reggie |2021<br /> 
-                            <span>lead actor</span></p>
+                            <span>Actor</span></p>
                             <p className='acting-gigs'>Not My Baby |Manny |2021<br /> 
-                            <span>lead actor</span></p>
+                            <span> Actor</span></p>
                         </div>
 
                     </div>  
@@ -112,11 +114,11 @@ const Work = () => {
                     <div className="column">
                         <div className="column2-description">
                             <p className='acting-gigs'>Walden University Commecial |Student/Model |2021<br /> 
-                            <span>lead actor</span></p>
+                            <span> Actor</span></p>
                             <p className='acting-gigs'>The Web Developers: Series |Dave |2021<br /> 
                             <span> Actor</span></p>
                             <p className='acting-gigs'>App.Love: Series |Marcus |2021<br /> 
-                            <span>lead actor</span></p>
+                            <span>Actor</span></p>
                         </div>
 
                     </div>  
@@ -137,11 +139,11 @@ const Work = () => {
                             style={{marginBottom: '8rem'}}
                             className="column2-description">
                             <p className='acting-gigs'>The Theatre Lab |Comedy |2021<br /> 
-                            <span>lead actor</span></p>
+                                <span>Improvisor</span></p>
                             <p className='acting-gigs'>Synetic Theatre |Synetic Technique Movement |2021<br /> 
-                            <span>lead actor</span></p>
+                                <span>Improvisor</span></p>
                             <p className='acting-gigs'>Second City Chicago |Improv Boot-camp |2021<br /> 
-                            <span>lead actor</span></p>
+                            <span>Improvisor</span></p>
                         </div>
 
                     </div>  

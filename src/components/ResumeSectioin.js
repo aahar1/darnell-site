@@ -13,7 +13,10 @@ import pink from '../images/pink2.JPG';
 
 const ResumeSectioin = () => {
     return (
+       
         <div className='about'>
+
+          
             <div className="about-image">
                 <h5 id='size'></h5>
                 <img src={pink} alt="" />
@@ -37,6 +40,7 @@ const ResumeSectioin = () => {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eaque accusantium cumque ut atque ratione amet. Ad quo sit reiciendis?
                         
                     </p>
+                    
                 </div>
             </div>
         </div>

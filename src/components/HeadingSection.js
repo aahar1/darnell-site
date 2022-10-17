@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Wave from './Wave';
 //images
 //import single2 from '../images/single2.JPEG';
-import photo3 from '../images/black-white3.jpg';
+import photo4 from '../images/black-white3-headshot.jpg';
 import jacket from '../images/jacket-no-backdrop.png'
 
 
@@ -36,12 +36,12 @@ const HeadingSection = () => {
                      has a niche for bringing physical, 
                     emotionally ranged, and high energy characters to life on film. 
                 </p>
-                <a href="#gallery" id='gallery-heading-section'>Gallery</a>
+              
            </motion.div>
            
            <div className="hero-images">                              
                <img classname='hero-darnell' 
-                    src={photo3} 
+                    src={photo4} 
                     alt="pic of Darnell" />             
            </div>          
        </div>      

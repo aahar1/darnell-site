@@ -6,6 +6,8 @@ import StorySection from '../components/StorySection';
 import ImageGallaryComponent from '../components/ImageGallaryComponent';
 import GallerySection from '../components/GallerySection';
 import Contact from '../components/Contact';
+import Player from '../components/Player';
+
 import '../style.css';
 //Animations
 import {motion} from 'framer-motion';
@@ -19,10 +21,8 @@ const HomePage = () => {
             initial='hidden' 
             animate='show'
             style={{overFlow: 'hidden'}}>
-           <HeadingSection />
-           <StorySection />
-           <ImageGallaryComponent />
-           <ResumeSectioin />
+            <Player />
+
          n
         
         </motion.div>

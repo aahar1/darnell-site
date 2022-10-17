@@ -1,66 +1,21 @@
-import { Page, Text, Image, Document, StyleSheet } from '@react-pdf/renderer';
+import DocViewer, { DocViewerRenderers,PDFRenderer, PNGRenderer } from "react-doc-viewer";
 import headshot from '../images/head-shot.jpg'
 //PDF resource https://www.youtube.com/watch?v=JU7rfAMpbZA
-
-const styles = StyleSheet.create({
-    body: {
-        paddingTop: 35,
-        paddingBottom: 65,
-        paddingHorizontal: 35,
-    },
-    title: {
-        fontSize: 24,
-        textAlign: "center",
-    },
-    text: {
-        margin: 12,
-        fontSize: 14,
-        textAlign: "justify",
-        fontFamily: "Times-Roman",
-    },
-    image: {
-        marginVertical: 15,
-        marginHorizontal: 100,
-    },
-    header: {
-        fontSize: 12,
-        marginBottom: 20,
-        textAlign: "center",
-        color: "grey",
-    },
-    pageNumber: {
-        position: "absolute",
-        fontSize: 12,
-        bottom: 30,
-        left: 0,
-        right: 0,
-        textAlign: "center",
-        color: "grey",
-    },
-});
-
+import PropTypes from "prop-types";
+import jsPDF from "jspdf";
 
 
 const PDFFile = () => {
 
-  return (
-   <Document>
-       <div>
-           <h1> Click Below to see Darnell Resume</h1>
-       </div>
-       <Page style={styles.body}>
-           <Text style={styles.header}></Text>
-           <Image style={styles.image} src={headshot} />
-           <Text style={styles.text}>Lorem ipsum dolor sit amet.</Text>
-           <Text
-             style={styles.pageNumber}
-             render={({pageNumber, totalPages }) => `${pageNumber} / ${totalPages}`}
-             fixed
-             />
+    const pdfGenerate=() => {
+        const doc = new jsPDF('landscape', 'px', 'a4', 'false');
+        doc.addImage(headshot, 'PNG', 65, 20, 500, 400)
+    }
+    return (
+        <div className='resume'>
+            <button onClick={pdfGenerate}>download pdf</button>
             
-       </Page>
-   </Document>
-  )
+        </div>
+    )
 }
-
-export default PDFFile
+export default PDFFile;

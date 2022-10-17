@@ -1,7 +1,10 @@
 import React from 'react';
 import HomePage from './pages/HomePage';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import HomePageSlider from './components/HomePageSlider';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
+//New Nav bar 2022
+import NavNew from './components/NavNew';
 import Nav from './components/Nav';
 //React router installed.  just import here.
 import {Route, Switch, useLocation} from 'react-router-dom';
@@ -9,17 +12,28 @@ import {Route, Switch, useLocation} from 'react-router-dom';
 import GlobalStyle from './components/GlobalStyle';
 //pages
 import Contact from './components/Contact';
+import { NewContactForm } from './components/NewContactForm';
 import Footer from './components/Footer';
 import Reels from './components/Reels';
 import ReelsData from './components/ReelsData';
 import Work from './pages/Work';
-import Player from './components/Player5';
+import Gallery from './pages/Gallery';
+import PDFFile from './components/PDFFile';
+import Resume from './pages/Resume'
 //Animation
 import {AnimatePresence} from 'framer-motion';
-import PDFFile from './components/PDFFile';
-import { PDFDownloadLink } from '@react-pdf/renderer';
+import {useState} from 'react';
+
+
+
+
 
 function App() {
+
+  const [close, setClose] = useState(false);
+  const closeMobileMenu = () => {
+    setClose(false)
+  }
 
   const videos = ReelsData.map((video) => {
     return (
@@ -36,28 +50,28 @@ function App() {
   const location = useLocation();
   return (
     <div className="App">
-      <Nav />
+      <NavNew />
+      
       <AnimatePresence exitBeforeEnter>
       <Switch location={location} key={location.pathname}>
         <Route path='/' exact>
-          <HomePage />
+          <HomePageSlider />
+         
         </Route>
         <Route path='/contact'>
-          <Contact />
+          <NewContactForm />
         </Route>
         <Route path = '/work'>
           <Work />
         </Route>
         <Route path = '/reels'>
-            <Reels player={videos}          
-          />          
+            <Reels />          
+        </Route>
+        <Route path = '/gallery'>
+            <Gallery />          
         </Route>
         <Route path = '/resume'>
-            <PDFFile />
-          <PDFDownloadLink document ={<PDFFile />} fileName='FORM'>
-            {({loading}) =>(loading ? <button>Loading Document</button>: <button>Download</button>)}
-          </PDFDownloadLink>
-         
+              <Resume /> 
         </Route>
       </Switch>  
       </AnimatePresence>  

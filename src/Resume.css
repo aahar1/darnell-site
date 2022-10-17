@@ -1,0 +1,19 @@
+.resume-button button {
+    padding: 1rem 10rem;
+    background: var(--special-color);
+    color: white;
+    border: none;
+    width: 100%;
+    font-size: 1.5rem;
+margin: 20px auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 0 1px 2px #5e5d5b;
+    text-align: center;
+    line-height: 65px;
+  
+}
+
+.Resume-container {
+    text-align: center;
+}
