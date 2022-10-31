@@ -199,15 +199,15 @@ h1 {
         }
     
         .slider ul li {
-            margin-block: 1.5rem;
+            margin-block: 1.1rem;
             list-style: none;
-            padding: 0px 15px;
+            padding: 0px 10px;
         }
     
        
                 .slider ul li a{
                     font-size: 25px;
-                    margin-block: 1.5rem;
+                    margin-block: 1.2rem;
                     text-decoration: none;
                     font-weight: bolder;
         
@@ -237,7 +237,7 @@ h1 {
 }
 
 
-@media (max-width:812px) {
+@media (max-width:896px) {
 
 
         .slider ul li {
@@ -266,7 +266,7 @@ h1 {
 
 .slider ul li a {
     font-size: 25px;
-    margin-block: 5rem;
+    margin-block: 3rem;
     padding: 0px 2px;
    
 
